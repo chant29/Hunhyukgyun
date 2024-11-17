@@ -1,0 +1,26 @@
+{
+    "generation-by" : "PARA, PopcornSAR",
+    "autosar-version" : "R20-11",
+    "manifest-type" : "function-group-manifest",
+    "function-group-name" : "DeepracerFG",
+    "meta-model-identifier" : "DeepracerFG",
+    "init-state" : "Off",
+    "function-group-states" : [
+        {
+            "state" : "Off",
+            "meta-model-identifier" : "DeepracerFG/Off"
+        },
+        {
+            "state" : "Device",
+            "meta-model-identifier" : "DeepracerFG/Device"
+        },
+        {
+            "state" : "Simulation",
+            "meta-model-identifier" : "DeepracerFG/Simulation"
+        },
+        {
+            "state" : "Verify",
+            "meta-model-identifier" : "DeepracerFG/Verify"
+        }
+    ]
+}
