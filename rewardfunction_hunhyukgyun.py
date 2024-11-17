@@ -13,12 +13,16 @@ def reward_function(params):
     reward_lane = 1
     reward_avoid = 1
     
-    right_lane = [34, 35, 36]
+    right_lane = [32, 33, 34, 35, 36]
+    left_lane = [17, 18, 19, 52, 53]
     
 
     # Reward if the agent stays inside the two borders of the track
     if (closest_waypoints[1] in right_lane and not is_left_of_center):
         reward_lane = 1.0
+    elif (closest_waypoints[1] in left_lane and is_left_of_center):
+        reward_lane = 1.0
+    
     else:
         if distance_from_center < 0.35 * track_width:
             reward_lane = 1.0
